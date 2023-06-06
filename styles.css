@@ -10,7 +10,7 @@ a{
 #nav-bar{
     padding: 3vw;
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 25% 15% 15% 15% 15% 15%;
     place-items: center;
 }
 
