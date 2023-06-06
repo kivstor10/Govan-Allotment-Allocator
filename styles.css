@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    font-family: 'Karla';
+}
+
+a{
+    text-decoration: none;
+}
+
+#nav-bar{
+    padding: 3vw;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    place-items: center;
+}
+
+#nav-bar > li{
+    list-style: none;
+}
+
+.site-name > a{
+    font-family: 'Contrail One';
+    color: #777777 !important;
+    font-size: 32px !important;
+}
+
+#nav-bar > li a{
+    font-size: 21px;
+    color: black;
+}
+
+.image-carousel{
+    display: flex;
+}
+
+.image-carousel ul{
+    list-style: none;
+    display: flex;
+}
+
+.image-carousel li{
+    margin-right: 10px;
+}
+
+.image-carousel img{
+    max-width: 100%;
+}
+
+.find-allotments{
+    color: white;
+    background-color: #79AC22;
+    padding: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    font-size: 23px;
+}

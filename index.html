@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet">
     <title>Guerrilla Allotments</title>
     <link href="styles.css" rel="stylesheet">
+    <script src="application.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#">Guerrilla Allotments</a></li>
+            <ul id="nav-bar">
+                <li class="site-name"><a href="#">Guerrilla Allotments</a></li>
                 <li><a href="#">Book your plot</a></li>
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Guides for Growing</a></li>
@@ -21,25 +26,24 @@
     </header>
     <main>
         <section>
-            <span>
+            <span class="image-carousel">
                 <ul>
-                    <li><img></img></li>
-                    <li><img></img></li>
-                    <li><img></img></li>
-                    <li><img></img></li>
-                    <li><img></img></li>
-                    <li><img></img></li>
+                    <li><img src="Images\Allotment1.jpg"></img></li>
+                    <li><img src="Images\Allotment2.jpg"></img></li>
+                    <li><img src="Images\Allotment3.jpg"></img></li>
+                    <li><img src="Images\Allotment4.jpg"></img></li>
+                    <li><img src="Images\Allotment5.jpg"></img></li>
+
                 </ul>
             </span>
-            <a>Find allotments near me</a>
+            <a class="find-allotments" href="#">Find allotments near me</a>
         </section>
-        <section>
             <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7385.811658132858!2d-4.311273948235644!3d55.861709697782864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488845e0899457cb%3A0x260c681aff2b70f1!2sGovan%2C%20Glasgow!5e1!3m2!1sen!2suk!4v1685976189268!5m2!1sen!2suk" 
+            src="https://maps.google.com/maps?q=Govan%2C%20Glasgow&z=15&output=embed" 
             width="600" 
             height="450" 
             style="border:0;" 
-            allowfullscreen="" 
+            allowfullscreen=""
             loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade">
             </iframe>
