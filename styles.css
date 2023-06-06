@@ -29,32 +29,38 @@ a{
     color: black;
 }
 
-.image-carousel{
-    display: flex;
-}
-
 .landing-page{
     height: 85vh;
     margin: 0;
 }
 
+.image-carousel{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
 .image-carousel ul{
     list-style: none;
     display: flex;
     padding: 0;
 }
-
 .image-carousel li{
-    margin-right: 10px;
+    margin: 0 5px;
 }
-
 .image-carousel img{
     max-width: 100%;
+}
+.image-carousel > ul > li:nth-child(3){
+    scale: 1.1;
+    margin: 0 15px;
+}
+.image-carousel > ul > li:nth-child(3) > img{
+    border-radius: 5px;
 }
 
 .carousel-selectors{
     display: inline-block;
-    margin: 50px 0;
+    margin: 70px 0;
     width: 100vw
 }
 
@@ -62,7 +68,7 @@ a{
     display: grid;
     place-items: center;
     padding: 0;
-    grid-template-columns: 42.5% 3% 3% 3% 3% 3% 42.5%;
+    grid-template-columns: 45% 2% 2% 2% 2% 2% 45%;
     outline: 1px red;
     list-style-type: none;
 }
