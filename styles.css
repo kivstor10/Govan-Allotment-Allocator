@@ -111,3 +111,33 @@ a{
     letter-spacing: 0.01em;
     font-size: 23px;
 }
+
+.allotment-map-section{
+    height: 85vh;
+    margin: 10% 0;
+}
+
+.select-yeild-or-guides{
+    display: grid;
+    grid-template-columns: 17.5% 25% 10% 25% 17.5%;
+    height: 85vh;
+    place-items: center;
+}
+
+.yeild-or-guides-button{
+    background-color: red;
+    color: white;
+    font-size: 21px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 50%;
+    width: 100%;
+}
+
+.select-yeild-or-guides > a:nth-child(1){
+    grid-column-start: 2;
+}
+.select-yeild-or-guides > a:nth-child(2){
+    grid-column-start: 4;
+}
