@@ -119,19 +119,19 @@ a{
 
 .select-yeild-or-guides{
     display: grid;
-    grid-template-columns: 17.5% 25% 10% 25% 17.5%;
-    height: 85vh;
+    grid-template-columns: 25% 20% 10% 20% 25%;
+    height: 75vh;
     place-items: center;
 }
 
 .yeild-or-guides-button{
-    background-color: red;
+    background-color: #79AC22;
     color: white;
     font-size: 21px;
+    font-weight: 700;
     display: grid;
     place-items: center;
-    text-align: center;
-    height: 50%;
+    height: 60%;
     width: 100%;
 }
 
