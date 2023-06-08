@@ -7,6 +7,8 @@ a{
     text-decoration: none;
 }
 
+/*---------------------------------[ Header ]---------------------------------*/
+
 #nav-bar{
     padding: 3vw;
     display: grid;
@@ -29,9 +31,13 @@ a{
     color: black;
 }
 
+/*---------------------------------[ Landing page ]---------------------------------*/
+
 .landing-page{
     height: 85vh;
     margin: 0;
+    z-index: 10;
+    box-shadow: 0px 4px 24px -3px rgba(0, 0, 0, 0.18);
 }
 
 .image-carousel{
@@ -96,6 +102,8 @@ a{
     opacity: 1;
 }
 
+/*---------------------------------[ Allotment Locator ]---------------------------------*/
+
 .find-allotments{
     display: flex;
     justify-content: center;
@@ -112,10 +120,27 @@ a{
     font-size: 23px;
 }
 
-.allotment-map-section{
-    height: 85vh;
-    margin: 10% 0;
+#allotment-map-section{
+    height: 65vh;
+    background-image: url('Assets/green%20blurred%20background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15vh;
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
 }
+
+.location-selector{
+    grid-column-start: 3;
+    background-color: white;
+    border-radius: 27px;
+    font-size: 21px;
+    color: #777777;
+    padding: 3rem;
+    height: 65%;
+}
+
+/*---------------------------------[ Guides for Growing ]---------------------------------*/
 
 .select-yeild-or-guides{
     display: grid;
