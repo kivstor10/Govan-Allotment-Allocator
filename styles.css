@@ -166,3 +166,101 @@ a{
 .select-yeild-or-guides > a:nth-child(2){
     grid-column-start: 4;
 }
+
+/*---------------------------------[ About Us page ]---------------------------------*/
+
+.about-us-intro{
+    height: 65vh;
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about-us-intro h1{
+    width: 100%;
+    font-weight: 700;
+    font-size:calc(12px + 3.5vw);
+    text-align: center;
+}
+
+.about-us-intro p{
+    padding: 5vh 6vw;
+    font-weight: 700;
+    font-size:calc(8px + 1.2vw);
+    text-align: center;
+}
+
+.about-us-info{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-us-background{
+    
+    background-image: url('Assets/about-us-background.jpg');
+    
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.about-us-info::after {    
+    
+    content: "";
+    background-image: url('Assets/about-us-background.jpg');
+    background-size: cover;
+    position:absolute;
+    width: 100%;
+    height: 85%;
+    opacity: 60%;
+    filter: blur(2px);
+}
+
+#about-us-info-container{
+    height: 60%;
+    opacity: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4vh 3vh;
+}
+
+#about-us-info-container div{
+    z-index: 1;
+    width: 44%;
+    background: rgba(59, 162, 57, 0.6);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    min-height: 110%;
+    
+}
+
+#about-us-info-container div p{
+    overflow: hidden;
+    margin: 0 6vw 0 4vw;
+    font-weight: 700;
+    font-size: calc(8px + 1vw);
+    text-align: center;
+    
+}
+
+#about-us-info-container figure{
+    z-index: 1;
+    min-height: 110%;
+    width: 29%;
+    display: flex;
+    align-items: center;
+}
+
+#about-us-info-container figure img{
+    height: calc(40px + 16vw);
+    position: relative;
+    left: -4vw;
+    
+
+
+}
