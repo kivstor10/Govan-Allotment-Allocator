@@ -1,6 +1,7 @@
 *{
     margin: 0;
     font-family: 'Karla';
+    scroll-behavior: smooth;
 }
 
 a{
@@ -147,6 +148,21 @@ a{
 
 /*---------------------------------[ Guides for Growing ]---------------------------------*/
 
+.guide-navigator{
+    font-size: 20px;
+    letter-spacing: 0.01rem;
+    margin-left: 7%;
+    background-color: #cfcfcf;
+    max-width: fit-content;
+    padding: 1rem;
+}
+.guide-navigator > a{
+    color: #454545;
+}
+.guide-navigator > a:hover{
+    text-decoration: underline;
+}
+
 .select-yeild-or-guides{
     display: grid;
     grid-template-columns: 25% 20% 10% 20% 25%;
@@ -268,4 +284,67 @@ a{
     height: calc(40px + 16vw);
     position: relative;
     left: -4vw;
+}
+
+/*---------------------------------[ Profile page ]---------------------------------*/
+
+.profile-info-section{
+    height: 40vh;
+    padding: 15vh 30vh 0 30vh;
+    display: grid;
+    grid-template-columns: 30% 35% 45%;
+    grid-template-rows: 50% 50%;
+}
+.profile-info-section > img{
+    height: 100%;
+    width: auto;
+}
+.profile-info-section > p{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-size: 19px;
+    letter-spacing: 0.1rem;
+    padding: 0 40px;
+}
+.profile-info-section > h1, .profile-info-section > a{
+    margin-top: 50px;
+}
+#follow-button, .profile-info-section > h1{
+    padding: 0 0.4rem;
+    height: fit-content;
+    width: fit-content;
+}
+#follow-button{
+    font-size: 21px;
+    font-weight: 700;
+    color: #777777; 
+}
+#follow-button:hover{
+    border-radius: 3px;
+    color: #777777;
+    outline: 3px solid #777777;
+}
+.follow-button-clicked{
+    border-radius: 3px;
+    background-color: #79AC22;
+    color: white!important;
+    outline: 3px solid #79AC22;
+}
+.follow-button-clicked:hover{
+    outline: 3px solid #79AC22!important;
+}
+
+.profile-picture-collection{
+    height: 100vh;
+    padding: 0 30vh 15vh 30vh;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    gap: 5px;
+}
+.profile-picture-collection > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
