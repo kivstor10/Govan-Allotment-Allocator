@@ -1,3 +1,7 @@
+window.onload = function() {
+  document.body.style.display = 'block';
+};
+
 var button = document.getElementById("follow-button");
 
 if (button) {
@@ -7,7 +11,7 @@ if (button) {
       button.innerHTML = "Follow";
     } else {
       button.classList.add("follow-button-clicked");
-      button.innerHTML = "Followed";
+      button.innerHTML = "Following";
     }
   });
 }

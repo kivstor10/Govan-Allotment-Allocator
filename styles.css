@@ -127,8 +127,6 @@ body{
     opacity: 1;
 }
 
-/*---------------------------------[ Allotment Locator ]---------------------------------*/
-
 .find-allotments{
     display: flex;
     justify-content: center;
@@ -145,24 +143,45 @@ body{
     font-size: 23px;
 }
 
+/*---------------------------------[ Allotment Locator ]---------------------------------*/
+
 #allotment-map-section{
-    height: 65vh;
+    height: 70vh;
     background-image: url('Assets/green%20blurred%20background.svg');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 15vh;
     display: grid;
     grid-template-columns: 45% 10% 45%;
+    grid-template-rows: 20% 80%;
+    grid-row-gap: 50px;
+}
+
+.search-bar{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background: white;
+    border-radius: 27px;
+    font-size: 21px;
+    color: #777777;
+    width: 100%;
+    height: 100%;
+}
+
+#allotment-map-section > iframe{
+    grid-row-start: 2;
+    width: 100%;
+    height: 100%;
 }
 
 .location-selector{
     grid-column-start: 3;
+    grid-row-start: 2;
     background-color: white;
     border-radius: 27px;
     font-size: 21px;
     color: #777777;
     padding: 3rem;
-    height: 65%;
 }
 
 /*---------------------------------[ Guides for Growing ]---------------------------------*/
@@ -173,7 +192,7 @@ body{
     margin-left: 7%;
     background-color: #cfcfcf;
     max-width: fit-content;
-    padding: 1rem;
+    padding: 0.8rem 1rem;
 }
 .guide-navigator > a{
     color: #454545;
@@ -185,7 +204,7 @@ body{
 .select-yeild-or-guides{
     display: grid;
     grid-template-columns: 25% 20% 10% 20% 25%;
-    height: 75vh;
+    height: 80vh;
     place-items: center;
 }
 
@@ -194,6 +213,7 @@ body{
     color: white;
     font-size: 21px;
     font-weight: 700;
+    letter-spacing: 0.0.8rem;
     display: grid;
     place-items: center;
     height: 60%;
@@ -206,6 +226,12 @@ body{
 .select-yeild-or-guides > a:nth-child(2){
     grid-column-start: 4;
 }
+
+/*---------------------------------[ Growing Guides ]---------------------------------*/
+
+
+
+/*---------------------------------[ Yield Calculator ]---------------------------------*/
 
 /*---------------------------------[ About Us page ]---------------------------------*/
 
@@ -336,19 +362,21 @@ body{
 }
 #follow-button{
     font-size: 21px;
+    border-radius: 3px;
     font-weight: 700;
     color: #777777; 
+    outline: 3px solid #7777773b;
 }
 #follow-button:hover{
     border-radius: 3px;
-    color: #777777;
+    color: #2c2c2c;
     outline: 3px solid #777777;
 }
 .follow-button-clicked{
     border-radius: 3px;
     background-color: #79AC22;
     color: white!important;
-    outline: 3px solid #79AC22;
+    outline: 3px solid #79AC22!important;
 }
 .follow-button-clicked:hover{
     outline: 3px solid #79AC22!important;
