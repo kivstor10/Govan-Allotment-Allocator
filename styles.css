@@ -15,6 +15,7 @@ a{
     display: grid;
     grid-template-columns: 25% 15% 15% 15% 15% 15%;
     place-items: center;
+    box-shadow: 0px 4px 24px -3px rgba(0, 0, 0, 0.18);
 }
 
 #nav-bar > li{
@@ -48,6 +49,7 @@ a{
 
 .image-carousel{
     margin-top: 40px;
+    margin: 0 -5px;
     display: flex;
     align-items: center;
 }
@@ -200,20 +202,20 @@ a{
 }
 
 .about-us-intro h1{
+    margin-top: 50px;
+    font-style: 'Karla';
     width: 100%;
     font-weight: 700;
     font-size:calc(12px + 3.5vw);
     text-align: center;
-
-    text-shadow: 0px 4px 4px
-        rgba(0, 0, 0, 0.25);
 }
 
 .about-us-intro p{
     padding: 5vh 6vw;
-    font-weight: 700;
     font-size:calc(8px + 1.2vw);
     text-align: center;
+    color: #777777;
+    letter-spacing: 0.01rem;
 }
 
 .about-us-info{
@@ -266,10 +268,10 @@ a{
 #about-us-info-container div p{
     overflow: hidden;
     margin: 0 6vw 0 4vw;
-    font-weight: 700;
     font-size: calc(8px + 1vw);
     text-align: center;
-    
+    color: white;
+    letter-spacing: 0.01rem;
 }
 
 #about-us-info-container figure{
@@ -336,7 +338,7 @@ a{
 }
 
 .profile-picture-collection{
-    height: 100vh;
+    height: 110vh;
     padding: 0 30vh 15vh 30vh;
     display: grid;
     grid-template-columns: 33% 33% 33%;
