@@ -26,12 +26,16 @@ if (button) {
 
 const searchBar = document.getElementById("search-bar");
 const suggestionsList = document.querySelector(".suggestions-list");
+const locationSelectorUl = document.querySelector('.location-selector > ul');
+const locationSelector = document.querySelector('.location-selector > h3');
 
 searchBar.addEventListener("input", () => {
   const searchText = searchBar.value.trim();
   
   if (searchText === "") {
     suggestionsList.style.display = "none";
+    locationSelectorUl.style.visibility = "hidden";
+    locationSelector.innerHTML = "";
   } else {
     const suggestedLocations = [
       "Kintra St, Govan, Glasgow G51 2RL",
@@ -47,13 +51,10 @@ searchBar.addEventListener("input", () => {
 
       li.addEventListener("click", function() {
         const clickedInnerHTML = this.innerHTML;
-        console.log(clickedInnerHTML);
 
         searchBar.value = clickedInnerHTML; // Replace input field value with clicked innerHTML
 
-        const locationSelector = document.querySelector('.location-selector > h3');
         locationSelector.innerHTML = "> " + clickedInnerHTML + ":";
-        const locationSelectorUl = document.querySelector('.location-selector > ul');
         locationSelectorUl.style.visibility = "visible";
       });
     });
@@ -61,6 +62,7 @@ searchBar.addEventListener("input", () => {
     suggestionsList.style.display = "block";
   }
 });
+
 
 
 const availablePlots = document.querySelectorAll('.location-selector-available');
