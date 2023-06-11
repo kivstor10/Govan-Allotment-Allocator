@@ -22,7 +22,7 @@ if (button) {
   });
 }
 
-// ----------------------------[ Suggestive text Search bar ]----------------------------
+// ----------------------------[ Allotment Allocator functionality ]----------------------------
 
 const searchBar = document.getElementById("search-bar");
 const suggestionsList = document.querySelector(".suggestions-list");
@@ -44,32 +44,39 @@ searchBar.addEventListener("input", () => {
       const li = document.createElement("li");
       li.textContent = location;
       suggestionsList.appendChild(li);
+
+      li.addEventListener("click", function() {
+        const clickedInnerHTML = this.innerHTML;
+        console.log(clickedInnerHTML);
+
+        searchBar.value = clickedInnerHTML; // Replace input field value with clicked innerHTML
+
+        const locationSelector = document.querySelector('.location-selector > h3');
+        locationSelector.innerHTML = "> " + clickedInnerHTML + ":";
+        const locationSelectorUl = document.querySelector('.location-selector > ul');
+        locationSelectorUl.style.visibility = "visible";
+      });
     });
 
     suggestionsList.style.display = "block";
   }
 });
 
-// ----------------------------[ Allotment Allocator functionality ]----------------------------
 
-// Declare a variable to store the clicked <li> element's inner HTML
-let clickedInnerHTML = '';
+const availablePlots = document.querySelectorAll('.location-selector-available');
 
-// Get all <li> elements within the <ul> element
-const liElements = suggestionsList.getElementsByTagName('li');
+availablePlots.forEach(plot => {
+  let isReserved = false; // Track the reserved state
 
-// Add click event listener to each <li> element
-for (let i = 0; i < liElements.length; i++) {
-  liElements[i].addEventListener('click', function() {
-    // Store the inner HTML of the clicked <li> element in the variable
-    clickedInnerHTML = this.innerHTML;
-    console.log('clicked');
+  plot.addEventListener("click", function(event) {
+    event.preventDefault();
 
-    // Paste the inner HTML into the desired selector
-    const locationSelector = document.querySelector('.location-selector > p');
-    locationSelector.innerHTML = clickedInnerHTML;
-    console.log('Added inner HTML to location selector successfully!');
+    if (isReserved) {
+      this.innerHTML = "Reserve";
+      isReserved = false;
+    } else {
+      this.innerHTML = "Reserved";
+      isReserved = true;
+    }
   });
-}
-
-
+});
