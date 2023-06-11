@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet">
+    <title>Guides for Growing</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="application.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="nav-bar">
+                <li class="site-name"><a href="index.html">Guerrilla Allotments</a></li>
+                <li><a href="index.html">Book your plot</a></li>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="guides-for-growing.html">Guides for Growing</a></li>
+                <li id="active-page"><a href="#">Contact</a></li>
+                <li><a href="profile-page.html"><img src="Assets\User-icon.svg"></img></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-container">
+            <div class="contact-form-header">
+                <h1>
+                    Contact Us
+                </h1>
+            </div>
+            <div class="contact-form-container">
+                <form id="contact-form">
+                    <label for="name" id="name-label">
+                        <input name="name" id="name" type="text" placeholder="Your name" required>
+                    </label>
+                    <label for="email" id="email-label">
+                        <input name="email" id="email" type="email" placeholder="Your email" required>
+                    </label>
+                    <label for="phone" id="phone-label">
+                        <input name="phone" id="phone" type="tel" placeholder="Your phone number (optional)">
+                    </label>
+                    <label for="message" id="message-label">
+                        <textarea name="message" id="message" rows="8" cols="30" placeholder="Your message" required></textarea>
+                    </label>
+
+                    <input type="submit" id="contact-form-submit" value="SEND MESSAGE">
+                </form>
+
+                
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
