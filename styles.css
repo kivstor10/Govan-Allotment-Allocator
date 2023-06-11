@@ -170,6 +170,7 @@ body{
     height: fit-content;
     padding: 20px;
     outline: 3px solid #b6b6b69a;
+    border: none;
     z-index: 10;
 }
 
@@ -194,6 +195,7 @@ body{
 }
 .suggestions-list li:hover {
     background-color: #f5f5f5;
+    border-radius: 15px;
 }
 
 .allotment-map-section > iframe{
@@ -357,6 +359,22 @@ body{
     height: calc(40px + 16vw);
     position: relative;
     left: -4vw;
+}
+
+/*---------------------------------[ Landing page ]---------------------------------*/
+
+.contact-section{
+    background-image: url('Assets/green%20blurred%20background.svg');
+    height: 70vh;
+    padding: 10% 10%;
+}
+
+.contact-section > div{
+    height: 60%;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10%;
 }
 
 /*---------------------------------[ Profile page ]---------------------------------*/

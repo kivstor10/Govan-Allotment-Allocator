@@ -50,3 +50,26 @@ searchBar.addEventListener("input", () => {
   }
 });
 
+// ----------------------------[ Allotment Allocator functionality ]----------------------------
+
+// Declare a variable to store the clicked <li> element's inner HTML
+let clickedInnerHTML = '';
+
+// Get all <li> elements within the <ul> element
+const liElements = suggestionsList.getElementsByTagName('li');
+
+// Add click event listener to each <li> element
+for (let i = 0; i < liElements.length; i++) {
+  liElements[i].addEventListener('click', function() {
+    // Store the inner HTML of the clicked <li> element in the variable
+    clickedInnerHTML = this.innerHTML;
+    console.log('clicked');
+
+    // Paste the inner HTML into the desired selector
+    const locationSelector = document.querySelector('.location-selector > p');
+    locationSelector.innerHTML = clickedInnerHTML;
+    console.log('Added inner HTML to location selector successfully!');
+  });
+}
+
+
