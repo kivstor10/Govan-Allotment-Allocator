@@ -441,3 +441,99 @@ body{
     width: 100%;
     object-fit: cover;
 }
+
+/*---------------------------------[ Contact page ]---------------------------------*/
+
+.contact-container{
+    height: 65vh;
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 15vh;
+}
+
+.contact-form-header {
+    margin-top: 2vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 6vh;
+
+}
+
+.contact-form-header h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(8px + 1.2vw);
+    letter-spacing: 0.01em;
+    
+}
+
+#contact-form{
+    display: flex;
+    padding: 2vw 3vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#contact-form label{
+    display: flex;
+    padding: 1.2vh 8px 1.2vh 8px;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+#name-label{
+    width: calc(62.1%/2);
+    min-width: calc(62.1%/2);
+}
+
+#email-label{
+    width: calc(62.1%/2);
+    min-width: calc(62.1%/2);
+}
+
+#phone-label{
+    width: calc(62.1% + 16px);
+    min-width: calc(62.1% + 16px);
+}
+
+#message-label{
+    width: calc(62.1% + 16px);
+    min-width: calc(62.1% + 16px);
+    margin-bottom: 2vh;
+}
+
+#contact-form-submit{
+    width: calc(62.1% + 16px);
+    min-height: 3em;
+    background-color: #5DDC5B;
+    border: 1px solid #BCBDBC;
+    font-weight: 400;
+    font-size: calc(8px + 0.7vw);
+    color: #2D2D2D;
+}
+
+#contact-form label input, textarea{
+  width: 100%;
+  min-height: 2em;
+  font-weight: 400;
+  font-size: calc(8px + 0.7vw);
+  padding: 0.7vh 1vh;
+  border: 1px solid #BDBCBC;
+  
+
+}
+
+::placeholder{
+    color: #BDBCBC;
+  }
