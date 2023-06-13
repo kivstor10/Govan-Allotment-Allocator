@@ -29,6 +29,14 @@ body{
     padding: 8px 0 8px 0;
 }
 
+.nav-option{
+    transition: border-bottom 0.2s ease-out;
+}
+
+.nav-option:hover{
+    border-bottom: 8px solid #cdcdcd;
+}
+
 .site-name > a{
     font-family: 'Contrail One';
     color: #777777 !important;
@@ -263,7 +271,6 @@ body{
     font-size: 20px;
     letter-spacing: 0.01rem;
     margin-left: 7%;
-    background-color: #cfcfcf;
     max-width: fit-content;
     padding: 0.8rem 1rem;
 }
@@ -579,3 +586,5 @@ body{
 ::placeholder{
     color: #BDBCBC;
   }
+
+
