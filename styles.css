@@ -309,7 +309,9 @@ body{
 
 /*---------------------------------[ Growing Guides ]---------------------------------*/
 
-
+.growing-guides-main{
+    height: 80vh;
+}
 
 /*---------------------------------[ Yield Calculator ]---------------------------------*/
 
@@ -409,22 +411,6 @@ body{
     height: calc(40px + 16vw);
     position: relative;
     left: -4vw;
-}
-
-/*---------------------------------[ Landing page ]---------------------------------*/
-
-.contact-section{
-    background-image: url('Assets/green%20blurred%20background.svg');
-    height: 70vh;
-    padding: 10% 10%;
-}
-
-.contact-section > div{
-    height: 60%;
-    max-width: 100%;
-    background-color: white;
-    border-radius: 15px;
-    padding: 10%;
 }
 
 /*---------------------------------[ Profile page ]---------------------------------*/
@@ -538,8 +524,6 @@ body{
     align-items: center;
    
 }
-
-
 
 #name-label{
     width: calc(62.1%/2);
